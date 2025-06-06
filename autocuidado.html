@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./css/autocuidado.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div id="header-container"></div>
+    <main>
+        <div class="headline">
+            <h1>Práticas de Autocuidado</h1>
+            <p>Aqui você encontra ferramentas e sugestões para cuidar do seu bem-estar emocional. Explore as diferentes
+                opções e escolha as que mais ressoam com você.</p>
+        </div>
+        <div class="tabs-container">
+            <div class="tab active" data-content="meditacao">
+                <span class="check"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.75012 12.1275L3.62262 9L2.55762 10.0575L6.75012 14.25L15.7501 5.25L14.6926 4.1925L6.75012 12.1275Z"
+                            fill="white" />
+                    </svg>
+                </span> Meditação guiada
+            </div>
+            <div class="tab" data-content="respiracao">
+                <span class="check"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.75012 12.1275L3.62262 9L2.55762 10.0575L6.75012 14.25L15.7501 5.25L14.6926 4.1925L6.75012 12.1275Z"
+                            fill="white" />
+                    </svg>
+                </span> Técnicas de respiração
+            </div>
+            <div class="tab" data-content="diario">
+                <span class="check"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.75012 12.1275L3.62262 9L2.55762 10.0575L6.75012 14.25L15.7501 5.25L14.6926 4.1925L6.75012 12.1275Z"
+                            fill="white" />
+                    </svg>
+                </span> Diário Emocional
+            </div>
+            <div class="tab" data-content="playlist">
+                <span class="check"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.75012 12.1275L3.62262 9L2.55762 10.0575L6.75012 14.25L15.7501 5.25L14.6926 4.1925L6.75012 12.1275Z"
+                            fill="white" />
+                    </svg>
+                </span> Playlist relaxante
+            </div>
+        </div>
+        <div class="content-container">
+
+            <div class="tab-content active" id="meditacao">
+                <div class="card meditacao-card">
+                    <h2>Meditação Guiada</h2>
+                    <p>A meditação pode ajudar a reduzir o estresse, melhorar o foco e promover bem-estar geral.
+                        Experimente esta meditação guiada para iniciantes:</p>
+
+                    <div class="video-wrapper">
+                        <iframe width="842" height="315"
+                            src="https://www.youtube.com/embed/sJjyX9W-E-Y?si=qdFqd5JkX-vTEchJ"
+                            title="YouTube video player" frameborder="0"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+
+                    <span>Dicas para Meditação:</span>
+                    <ul>
+                        <li>Comece com sessões curtas, de 5 a 10 minutos.</li>
+                        <li>Encontre um local tranquilo e confortável.</li>
+                        <li>Use roupas confortáveis.</li>
+                        <li>Seja gentil consigo mesmo – a mente naturalmente divaga.</li>
+                        <li>Pratique regularmente para melhores resultados.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="tab-content" id="respiracao">
+                <div class="cards-wrapper">
+                    <div class="card respiracao-card">
+                        <h2>Respiração 4-7-8</h2>
+                        <p>Técnicas de respiração são ferramentas poderosas para acalmar o sistema nervoso, reduzir
+                            ansiedade e restaurar o equilíbrio. Experimente estas técnicas:</p>
+                        <ul>
+                            <li>Inspire pelo nariz contando até 4</li>
+                            <li>Segure a respiração contando até 7</li>
+                            <li>Expire pela boca contando até 8</li>
+                            <li>Repita 4 vezes</li>
+                        </ul>
+                    </div>
+                    <div class="card respiracao-card">
+                        <h2>Respiração Quadrada</h2>
+                        <p>Pratique estas técnicas quando se sentir estressado, ansioso ou quando precisar de um momento
+                            para se centralizar. A prática regular fortalece esta habilidade.
+                        </p>
+                        <ul>
+                            <li>Inspire contando até 4</li>
+                            <li>Segure contando até 4</li>
+                            <li>Expire contando até 4</li>
+                            <li>Segure contando até 4</li>
+                            <li>Repita 4 vezes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="diario">
+                <div class="card diario-card">
+                    <h2>Diário Emocional</h2>
+                    <p>Escrever sobre seus sentimentos pode ajudar a processar emoções, identificar padrões e ganhar
+                        clareza. Use este espaço para registrar como você está se sentindo.</p>
+                    <form action="">
+                        <div class="input-area">
+                            <textarea name="diario" id="diario"
+                                placeholder="Como você está se sentindo hoje? O que está em sua mente?"></textarea>
+                        </div>
+                        <button>Salvar no diário</button>
+                    </form>
+                    <div class="historico">
+                        <h3>Histórico</h3>
+                        <div class="historico-container">
+                            <div class="historico-card">
+                                <span>26/05/2025, 00:14:43</span>
+                                <span>Desabafo...</span>
+                            </div>
+                            <div class="historico-card">
+                                <span>26/05/2025, 00:14:43</span>
+                                <span>Desabafo...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tab-content" id="playlist">
+                <div class="card playlist-card">
+                    <h2>Playlist Relaxante</h2>
+                    <p>A música tem o poder de acalmar a mente, reduzir o estresse e melhorar o humor. Experimente estas
+                        playlists selecionadas para relaxamento e bem-estar.</p>
+                    <div class="playlists">
+                        <div class="video-wrapper">
+                            <iframe style="border-radius:12px"
+                                src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZqd5JICZI0u?utm_source=generator"
+                                width="100%" height="352" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                        <div class="video-wrapper">
+                            <iframe style="border-radius:12px"
+                                src="https://open.spotify.com/embed/playlist/37i9dQZF1DX3Ogo9pFvBkY?utm_source=generator"
+                                width="100%" height="352" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                        <div class="video-wrapper">
+                            <iframe style="border-radius:12px"
+                                src="https://open.spotify.com/embed/playlist/37i9dQZF1DWVS1recTqXhf?utm_source=generator"
+                                width="100%" height="352" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                        <div class="video-wrapper">
+                            <iframe style="border-radius:12px"
+                                src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZqd5JICZI0u?utm_source=generator"
+                                width="100%" height="352" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <div id="footer-container"></div>
+    <script src="js/components.js"></script>
+
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetId = tab.getAttribute('data-content');
+
+                // Remove .active das abas
+                tabs.forEach(t => t.classList.remove('active'));
+
+                // Remove .active e classes específicas das seções
+                contents.forEach(c => {
+                    c.classList.remove('active', 'meditacao-ativa', 'respiracao-ativo', 'diario-ativo', 'playlist-ativo');
+                });
+
+                // Adiciona classe .active na aba clicada
+                tab.classList.add('active');
+
+                // Adiciona .active + classe especifica na seção correspondente
+                const targetContent = document.getElementById(targetId);
+                targetContent.classList.add('active', `${targetId}-ativo`);
+            });
+        });
+    </script>
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Diário - LocalStorage
+    const form = document.querySelector('.diario-card form');
+    const textarea = document.querySelector('.diario-card textarea');
+    const historicoContainer = document.querySelector('.historico-container');
+    const historicoSection = document.querySelector('.diario-card .historico');
+    let verTodosBtn = null;
+
+    function getHistorico() {
+        return JSON.parse(localStorage.getItem('diarioHistorico') || '[]');
+    }
+
+    function setHistorico(arr) {
+        localStorage.setItem('diarioHistorico', JSON.stringify(arr));
+    }
+
+    function renderHistorico() {
+        const historico = getHistorico();
+        historicoContainer.innerHTML = '';
+
+        if (historico.length === 0) {
+            historicoContainer.innerHTML = `<div class="historico-vazio">Ainda não há nada no diário.</div>`;
+            if (verTodosBtn) verTodosBtn.remove();
+            return;
+        }
+
+        // Mostra só os dois primeiros itens do histórico
+        historico.slice(0, 2).forEach((item, idx) => {
+            const card = document.createElement('div');
+            card.className = 'historico-card';
+            card.tabIndex = 0;
+            card.innerHTML = `<span>${item.data}</span><span>${item.texto.length > 60 ? item.texto.slice(0, 60) + '...' : item.texto}</span>`;
+            card.addEventListener('click', () => openCardModal(item));
+            historicoContainer.appendChild(card);
+        });
+
+        // Botão "Ver todo o histórico"
+        if (historico.length > 2) {
+            if (!verTodosBtn) {
+                verTodosBtn = document.createElement('button');
+                verTodosBtn.className = 'ver-todos-btn';
+                verTodosBtn.textContent = 'Ver todo o histórico';
+                verTodosBtn.addEventListener('click', openHistoricoModal);
+                historicoSection.appendChild(verTodosBtn);
+            }
+        } else {
+            if (verTodosBtn) {
+                verTodosBtn.remove();
+                verTodosBtn = null;
+            }
+        }
+    }
+
+    // Salva no diário
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const texto = textarea.value.trim();
+            if (!texto) return;
+            const historico = getHistorico();
+            historico.unshift({
+                data: new Date().toLocaleString('pt-BR'),
+                texto
+            });
+            setHistorico(historico);
+            textarea.value = '';
+            renderHistorico();
+        });
+    }
+
+    // Modal pros cards expandidos
+    function openCardModal(item) {
+        closeModal();
+        const historico = getHistorico();
+        const idx = historico.findIndex(h => h.data === item.data && h.texto === item.texto);
+
+        const modal = document.createElement('div');
+        modal.className = 'modal-diario';
+        modal.innerHTML = `
+            <div class="modal-content expanded">
+                <button class="close-modal" title="Fechar">&times;</button>
+                <h3>${item.data}</h3>
+                <div class="modal-texto">${item.texto.replace(/\n/g, '<br>')}</div>
+                <div class="modal-actions">
+                    <button class="edit-btn" title="Editar">✏️ Editar</button>
+                    <button class="remove-btn" title="Remover">🗑️ Remover</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        // Fecha o modal
+        modal.querySelector('.close-modal').onclick = closeModal;
+        modal.onclick = e => { if (e.target === modal) closeModal(); };
+
+        // Remove o conteudo do diario
+        modal.querySelector('.remove-btn').onclick = function() {
+            if (confirm('Remover esta entrada do diário?')) {
+                historico.splice(idx, 1);
+                setHistorico(historico);
+                closeModal();
+                renderHistorico();
+            }
+        };
+
+        // Edita o conteudo do diario
+        modal.querySelector('.edit-btn').onclick = function() {
+            const modalTexto = modal.querySelector('.modal-texto');
+            const oldText = item.texto;
+            modalTexto.innerHTML = `<textarea class="edit-area">${oldText}</textarea>
+                <div class="edit-actions">
+                    <button class="save-edit-btn">Salvar</button>
+                    <button class="cancel-edit-btn">Cancelar</button>
+                </div>`;
+            const editArea = modal.querySelector('.edit-area');
+            editArea.focus();
+
+            // Salva a edição
+            modal.querySelector('.save-edit-btn').onclick = function() {
+                const newText = editArea.value.trim();
+                if (!newText) return alert('O texto não pode ficar vazio.');
+                historico[idx].texto = newText;
+                setHistorico(historico);
+                closeModal();
+                renderHistorico();
+            };
+            // Cancela a edição
+            modal.querySelector('.cancel-edit-btn').onclick = function() {
+                openCardModal(item);
+            };
+        };
+    }
+
+    // Modal de todo o historico de diarios
+    function openHistoricoModal() {
+        closeModal();
+        const historico = getHistorico();
+        const modal = document.createElement('div');
+        modal.className = 'modal-diario';
+        modal.innerHTML = `
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <h3>Todo o histórico</h3>
+                <div class="modal-historico-list">
+                    ${historico.map(item => `
+                        <div class="historico-card" tabindex="0">
+                            <span>${item.data}</span>
+                            <span>${item.texto.length > 60 ? item.texto.slice(0, 60) + '...' : item.texto}</span>
+                        </div>
+                    `).join('')}
+                </div>
+                <div style="display:flex;justify-content:flex-end;margin-top:1.5rem;">
+                    <button class="clear-btn" title="Limpar histórico">🧹 Limpar histórico</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+        modal.querySelector('.close-modal').onclick = closeModal;
+        modal.onclick = e => { if (e.target === modal) closeModal(); };
+        // Adiciona o evento de clique para cada card do histórico
+        modal.querySelectorAll('.historico-card').forEach((card, idx) => {
+            card.onclick = () => openCardModal(historico[idx]);
+        });
+        // Limpa todo o historico
+        modal.querySelector('.clear-btn').onclick = function() {
+            if (confirm('Tem certeza que deseja limpar todo o histórico do diário?')) {
+                setHistorico([]);
+                closeModal();
+                renderHistorico();
+            }
+        };
+    }
+
+    function closeModal() {
+        document.querySelectorAll('.modal-diario').forEach(m => m.remove());
+    }
+
+    renderHistorico();
+});
+</script>
+</body>
+
+</html>

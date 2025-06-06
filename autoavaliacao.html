@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autoavaliação Emocional</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/autoavaliacao.css">
+</head>
+<body>
+    <div id="header-container"></div> 
+  <main class="hero">
+    <section class="intro" style="width: 100%;">
+        <div class="titulo">
+            <h2>Autoavaliação Emocional</h2>
+            <p>Este é um breve questionário para ajudar você a refletir sobre seu bem-estar emocional.</p>
+        </div>
+      
+        <div id="perguntas">
+            <div class="question">
+                <p>Tenho me sentido ansioso com frequência?</p>
+                <div class="options" data-question="q1">
+                <button>Sim</button>
+                <button>Não</button>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Tenho dormido mal?</p>
+                <div class="options" data-question="q2">
+                <button>Sim</button>
+                <button>Não</button>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Tenho sentido desmotivação constante?</p>
+                <div class="options" data-question="q3">
+                <button>Sim</button>
+                <button>Não</button>
+                </div>
+            </div>
+            <button class="btn-primary" id="verResultado">Ver resultado</button>
+        </div>
+      
+
+      <div id="resultado" class="result"></div>
+      <button id="refazer" style="display: none;">Refazer autoavaliação</button>
+    </section>
+  </main>
+  <div id="footer-container"></div>
+  <script src="js/components.js"></script>
+  <script src="js/autoavaliacao.js"></script>
+</body>
+</html>
